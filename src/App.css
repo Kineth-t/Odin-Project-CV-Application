@@ -9,7 +9,7 @@
   text-align: center;
 }
 
-.educationSection {
+.educationSection, .experienceSection, .projectSection {
   text-align: start;
 }
 
@@ -48,8 +48,4 @@
 /* Regular spans (like the hyphen) */
 .educationDate span:not(.present-text), .experienceDate span:not(.present-text) {
   font-size: 18px;
-}
-
-.experienceSection {
-  text-align: start;
 }
