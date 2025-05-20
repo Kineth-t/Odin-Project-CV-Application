@@ -4,7 +4,7 @@ function Experience({ onRemove, showRemove}) {
     const [stillWorkingHere, setStillWorkingHere] = useState(false)
 
     const handleButtonClick = () => {
-
+        setStillWorkingHere(!stillWorkingHere)
     }
 
     return (
