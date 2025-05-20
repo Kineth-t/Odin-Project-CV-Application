@@ -13,20 +13,20 @@
   text-align: start;
 }
 
-.educationForm {
+.educationForm, .experienceForm{
   display: grid;
   grid-template-columns: 1fr auto; /* 1fr takes up remaining space, auto takes only necessary space */
   gap: 10px;
   align-items: start; /* Aligns items vertically in the center */
 }
 
-.educationTextarea {
+.educationTextarea, .experienceTextarea {
   width: 100%; /* Makes sure textarea takes the full width within its grid cell */
   min-height: 30px; /* Set a minimum height for the textarea */
   resize: vertical;
 }
 
-.educationDate {
+.educationDate, .experienceDate {
   width: 185px; /* Increased fixed width to accommodate both states */
   display: flex;
   gap: 5px;
@@ -34,18 +34,22 @@
   justify-content: flex-start;
 }
 
-.educationDate input {
+.educationDate input, .experienceDate input {
   width: 75px; /* Fixed width for inputs */
 }
 
 /* New style to ensure "Present" text takes the same space as an input */
-.educationDate span.present-text {
+.educationDate span.present-text, .experienceDate span.present-text {
   width: 60px;
   text-align: left;
   font-size: 18px;
 }
 
 /* Regular spans (like the hyphen) */
-.educationDate span:not(.present-text) {
+.educationDate span:not(.present-text), .experienceDate span:not(.present-text) {
   font-size: 18px;
+}
+
+.experienceSection {
+  text-align: start;
 }
