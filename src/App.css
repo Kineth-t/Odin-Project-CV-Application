@@ -22,20 +22,30 @@
 
 .educationTextarea {
   width: 100%; /* Makes sure textarea takes the full width within its grid cell */
-  min-height: 80px; /* Set a minimum height for the textarea */
+  min-height: 30px; /* Set a minimum height for the textarea */
   resize: vertical;
 }
 
 .educationDate {
+  width: 185px; /* Increased fixed width to accommodate both states */
   display: flex;
   gap: 5px;
-  align-items: start;
+  align-items: center;
+  justify-content: flex-start;
 }
 
 .educationDate input {
-  width: 110px; /* Limit width of the input elements */
+  width: 75px; /* Fixed width for inputs */
 }
 
-.educationDate span {
+/* New style to ensure "Present" text takes the same space as an input */
+.educationDate span.present-text {
+  width: 60px;
+  text-align: left;
+  font-size: 18px;
+}
+
+/* Regular spans (like the hyphen) */
+.educationDate span:not(.present-text) {
   font-size: 18px;
 }

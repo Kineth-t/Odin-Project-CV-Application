@@ -2,17 +2,14 @@ import Education from './Education'
 import { useState } from 'react';
 
 function Educations() {
-    const [educationList, setEducationList] = useState([1]); // Start with one education
-    const [nextId, setNextId] = useState(2); // Track next ID to assign
-    
+    const [educationList, setEducationList] = useState([1]);
     const addEducation = () => {
-        setEducationList([...educationList, nextId]);
-        setNextId(nextId + 1);
+        setEducationList([...educationList, educationList.length + 1]);
     };
 
-    const removeEducation = (idToRemove) => {
+    const removeEducation = (indexToRemove) => {
         if (educationList.length > 1) { // Keep at least one education
-            setEducationList(educationList.filter(id => id !== idToRemove));
+            setEducationList(educationList.filter((index) => index !== indexToRemove));
         }
     };
 
@@ -21,12 +18,11 @@ function Educations() {
             <div className="educationSection">
                 <h2 style={{marginBottom:"-5px"}}>Education</h2>
                 <hr></hr>
-                {educationList.map((id) => (
+                {educationList.map((index) => (
                     <Education 
-                        key={id} 
-                        onRemove={() => removeEducation(id)}
-                        showRemove={educationList.length > 1}
-                    />
+                    key={index} 
+                    onRemove={() => removeEducation(index)}
+                    showRemove={educationList.length > 1}/>
                 ))}
             </div>
             <button onClick={addEducation}>Add</button>

@@ -10,14 +10,26 @@ function Education({ onRemove, showRemove }) {
     return (
         <>
             <div className="educationForm">
-                <textarea name="" id="" className="educationTextarea"></textarea>
+                <textarea className="educationTextarea" placeholder="Singapore Management University
+Bachelor of Science (Computer Science)
+    - Major in Artificial Intelligence and Cybersecurity
+    - Relevant Coursework: Algorithms, Data Structures,
+      Operating Systems, Databases, Software Engineering
+    - GPA: 4.5/5.0"
+                style={{height:"100px"}}></textarea>
                 <div className="educationDate">
-                    <input type="month" />
+                    <input type="text" 
+                        minLength={8}
+                        maxLength={8}
+                        placeholder='MMM YYYY' />
                     <span>-</span>
                     {isCurrentlyStudying ? (
                         <span>Present</span>
                     ) : (
-                        <input type="month" />
+                        <input type="text" 
+                        minLength={8}
+                        maxLength={8}
+                        placeholder='MMM YYYY' />
                     )}
                 </div>
             </div>
