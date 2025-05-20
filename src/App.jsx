@@ -9,7 +9,6 @@ import './App.css'
 function App() {
     return (
         <>
-            <h1>This is a CV/Resume builder</h1>
             <GeneralInformation />
             <Educations />
             <Experiences />
