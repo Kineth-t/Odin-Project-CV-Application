@@ -10,7 +10,7 @@ function Education({ onRemove, showRemove }) {
     return (
         <>
             <div className="educationForm">
-                <textarea className="educationTextarea" placeholder="Singapore Management University
+                <textarea className="educationTextarea" placeholder="University of Hillview
 Bachelor of Science (Computer Science)
     - Major in Artificial Intelligence and Cybersecurity
     - Relevant Coursework: Algorithms, Data Structures,
