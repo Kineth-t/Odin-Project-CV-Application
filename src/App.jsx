@@ -13,6 +13,7 @@ function App() {
             <Educations />
             <Experiences />
             <Projects />
+            <Skills />
         </>
     )
 }
