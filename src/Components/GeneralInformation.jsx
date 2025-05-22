@@ -10,7 +10,7 @@ function GeneralInformation({ data, onChange }) {
             onChange={(e) => onChange({ ...data, email: e.target.value })}/>
             <span>|</span>
             <input type="text" placeholder="Location" className="locationInput"
-            onChange={(e) => onChange({ ...data, lcoation: e.target.value })}/>
+            onChange={(e) => onChange({ ...data, location: e.target.value })}/>
             <span>|</span>
             <input type="link" placeholder="LinkedIn / Github" className="linkInput"
             onChange={(e) => onChange({ ...data, link: e.target.value })}/>
