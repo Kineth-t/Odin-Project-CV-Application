@@ -29,7 +29,7 @@ function Experiences() {
                     showRemove={experienceList.length > 1}/>
                 ))}
             </div>
-            <button onClick={addExperience}>Add</button>
+            <button onClick={addExperience} className="ignore-for-image">Add</button>
         </>
     )
 }

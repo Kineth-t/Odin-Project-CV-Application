@@ -29,7 +29,7 @@ function Projects() {
                     />
                 ))}
             </div>
-            <button onClick={addProject}>Add</button>
+            <button onClick={addProject} className="ignore-for-image">Add</button>
         </>
     )
 }

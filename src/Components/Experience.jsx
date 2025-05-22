@@ -36,12 +36,12 @@ Operations Manager
                     )}
                 </div>
             </div>
-            <button type="button" onClick={handleButtonClick}>
+            <button type="button" onClick={handleButtonClick} className="ignore-for-image">
                         {stillWorkingHere
                             ? 'Undo currently working'
                             : 'Click if still currently working here'}
             </button>
-            {showRemove && <button onClick={onRemove}>Remove</button>}
+            {showRemove && <button onClick={onRemove} className="ignore-for-image">Remove</button>}
         </>
     )
 }

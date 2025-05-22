@@ -5,6 +5,9 @@ import Experiences from './Components/Experiences'
 import Projects from './Components/Projects'
 import Skills from './Components/Skills'
 import './App.css'
+import DownloadImageButton from './Components/DownloadImageButton'
+
+
 
 function App() {
     const [cvData, setCvData] = useState({
@@ -21,13 +24,16 @@ function App() {
 
     return (
         <>
-            <GeneralInformation data={cvData.generalInfo}
-            onChange={(newInfo) => setCvData((prev) => ({ ...prev, generalInfo: newInfo }))}/>
-            <Educations data={cvData.educations}
-            onChange={(newInfo) => setCvData((prev) => ({...prev, educations: newInfo}))}/>
-            <Experiences />
-            <Projects />
-            <Skills />
+            <div id="resume" style={{ padding: '40px', margin: '20px', background: 'white' }}>
+                <GeneralInformation data={cvData.generalInfo}
+                onChange={(newInfo) => setCvData((prev) => ({ ...prev, generalInfo: newInfo }))}/>
+                <Educations data={cvData.educations}
+                onChange={(newInfo) => setCvData((prev) => ({...prev, educations: newInfo}))}/>
+                <Experiences />
+                <Projects />
+                <Skills />
+            </div>
+            <DownloadImageButton />
         </>
     )
 }

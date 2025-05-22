@@ -29,7 +29,7 @@ function Educations({}) {
                     />
                 ))}
             </div>
-            <button onClick={addEducation}>Add</button>
+            <button onClick={addEducation} className="ignore-for-image">Add</button>
         </>
     )
 }

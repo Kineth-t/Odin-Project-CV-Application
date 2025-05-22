@@ -33,12 +33,12 @@ Bachelor of Science (Computer Science)
                     )}
                 </div>
             </div>
-            <button type="button" onClick={handleButtonClick}>
+            <button type="button" onClick={handleButtonClick} className="ignore-for-image">
                         {isCurrentlyStudying
                             ? 'Undo currently studying'
                             : 'Click if still currently studying here'}
             </button>
-            {showRemove && <button onClick={onRemove}>Remove</button>}
+            {showRemove && <button onClick={onRemove} className="ignore-for-image">Remove</button>}
         </>
     );
 }
