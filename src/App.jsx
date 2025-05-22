@@ -23,7 +23,8 @@ function App() {
         <>
             <GeneralInformation data={cvData.generalInfo}
             onChange={(newInfo) => setCvData((prev) => ({ ...prev, generalInfo: newInfo }))}/>
-            <Educations />
+            <Educations data={cvData.educations}
+            onChange={(newInfo) => setCvData((prev) => ({...prev, educations: newInfo}))}/>
             <Experiences />
             <Projects />
             <Skills />

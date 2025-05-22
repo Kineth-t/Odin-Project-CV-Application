@@ -1,7 +1,7 @@
 import Education from './Education'
 import { useState } from 'react';
 
-function Educations() {
+function Educations({}) {
     const [educationList, setEducationList] = useState([1]); // Start with one education
     const [nextId, setNextId] = useState(2); // Track next ID to assign
     

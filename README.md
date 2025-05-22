@@ -1,3 +1,6 @@
+This is a simple CV Builder web application built with React and vanilla CSS. The main goal of this project was to help me get comfortable with React.
+
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
