@@ -20,7 +20,7 @@
   align-items: start; /* Aligns items vertically in the center */
 }
 
-.educationTextarea, .experienceTextarea, .skillTextarea {
+.educationTextarea, .experienceTextarea, .skillTextarea, .projectTextarea {
   width: 100%; /* Makes sure textarea takes the full width within its grid cell */
   min-height: 30px; /* Set a minimum height for the textarea */
   resize: vertical;
